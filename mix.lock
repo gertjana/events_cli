@@ -1,0 +1,9 @@
+%{
+  "decimal": {:hex, :decimal, "1.8.1", "a4ef3f5f3428bdbc0d35374029ffcf4ede8533536fa79896dd450168d9acdf3c", [:mix], [], "hexpm", "3cb154b00225ac687f6cbd4acc4b7960027c757a5152b369923ead9ddbca7aec"},
+  "ex_cli": {:hex, :ex_cli, "0.1.6", "30f97ef0751c75863c669cf34ebb689a5a3ebf9dafd2e73739f173fbd7561a53", [:mix], [], "hexpm", "9b6e4e89f457f6805ae47a0fc0004bae804d894c85976dfd5b47330737dccf7b"},
+  "ex_prompt": {:hex, :ex_prompt, "0.1.5", "b136642d0962f8ea37b3c9fa185ad1f42c71c3b9c6c3950f0358d7f3d2db2970", [:mix], [], "hexpm", "ad19a404708c9c7b05d36090b2d074ceafbed248a8de1a22d45a05ebe6994b83"},
+  "number": {:hex, :number, "1.0.1", "a1017dc867a9860b0c261bf9f3ac4990f64589dbbe50260724190c78a0b92104", [:mix], [{:decimal, "~> 1.5", [hex: :decimal, repo: "hexpm", optional: false]}], "hexpm", "149c62771306451198b2a044b4f077520c9acf6e69304723b17385257c683b52"},
+  "pane": {:hex, :pane, "0.3.0", "7b028e2aa8f004b62a965de983d824ad20d94f3c9c82b2bb4a9cdcebeb9e7060", [:mix], [], "hexpm", "b7a98234bd8b79a77c6ce491be7ce4220689eba67a89373e20b6cb5da08a49c3"},
+  "poison": {:hex, :poison, "3.1.0", "d9eb636610e096f86f25d9a46f35a9facac35609a7591b3be3326e99a0484665", [:mix], [], "hexpm", "fec8660eb7733ee4117b85f55799fd3833eb769a6df71ccf8903e8dc5447cfce"},
+  "scribe": {:hex, :scribe, "0.10.0", "90e61b21fee884f58b955d1f45d7fa3e75f161ecb62bad8af6087aef3955c74f", [:mix], [{:pane, "~> 0.2", [hex: :pane, repo: "hexpm", optional: false]}], "hexpm", "3829da9c6a28b2105f0ec50e40f447bf768fb7d96717fbfceb602573f1a3c62e"},
+}
