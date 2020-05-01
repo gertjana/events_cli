@@ -1,21 +1,20 @@
 # Events
 
-**TODO: Add description**
+Simple cli tool to quickly record events
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `events_cli` to your list of dependencies in `mix.exs`:
+```
+mix deps.get
+mix escript.build
+```
+## Usage
 
-```elixir
-def deps do
-  [
-    {:events_cli, "~> 0.1.0"}
-  ]
-end
+```
+./events_cli add "Got a coffee" espresso 
+./events_cli list
+./events_cli find espresso
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/events_cli](https://hexdocs.pm/events_cli).
+data is stored in `~/.events.json`
 
