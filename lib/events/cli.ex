@@ -14,7 +14,7 @@ defmodule Events.CLI do
 
     argument :tags, type: :string, list: true, help: "zero or more tags to add with the event"
 
-    description "Alias: a\t\targs: [name] [tags]..\t\tAdds the name and tags for the current date/time"
+    description "Alias: a args: [name] [tags].. Adds the name and tags for the current date/time"
 
     run context do
       name = context[:name]
@@ -31,9 +31,9 @@ defmodule Events.CLI do
   command :list do
     aliases [:l]
 
-    argument :year, type: :integer, help: "[year] The year we want to list events for"`
+    argument :year, type: :integer, help: "[year] The year we want to list events for"
 
-    description "Alias: l\t\targs: [year]\t\tList the events for the specified year"
+    description "Alias: l args: [year] Lists the events for the specified year"
 
     run context do
       y = context[:year] |> Integer.to_string
@@ -48,6 +48,7 @@ defmodule Events.CLI do
 
     argument :tag, type: :string, help: "[tag] list events with tag"
 
+    description "Alias: f args [tag] finds all events with the provided tag"
     run context do
       year = context[:year] |> Integer.to_string
       tag = context[:tag]
@@ -58,6 +59,8 @@ defmodule Events.CLI do
 
   command :tags do
     aliases [:t]
+
+    description "Alias: t args: none lists all tags"
 
     run _context do
       Events.list_tags |> Enum.each(fn x -> IO.puts(x) end)
