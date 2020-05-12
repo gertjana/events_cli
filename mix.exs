@@ -16,7 +16,7 @@ defmodule Events.MixProject do
   def application do
     [
       mod: {Events, []},
-      extra_applications: [:logger]
+      extra_applications: [:logger, :tz]
     ]
   end
 
@@ -27,7 +27,8 @@ defmodule Events.MixProject do
       {:ex_prompt, "~> 0.1.5"},
       {:poison, "~> 3.1"},
       {:number, "~> 1.0.1"},
-      {:scribe, "~> 0.10"}
+      {:scribe, "~> 0.10"},
+      {:tz, "~> 0.9.0"}
     ]
   end
 end
